@@ -1,0 +1,65 @@
+POST /api/v1/auth/register - Registrar usuario
+POST /api/v1/auth/login - Iniciar sesión
+POST /api/v1/auth/validate - Validar token
+
+GET /api/v1/libros - Listar libros
+GET /api/v1/libros/{id} - Obtener libro
+POST /api/v1/libros - Crear libro
+PUT /api/v1/libros/{id} - Actualizar libro
+DELETE /api/v1/libros/{id} - Eliminar libro
+GET /api/v1/libros/disponibles - Libros disponibles
+GET /api/v1/libros/buscar - Buscar por título
+
+GET /api/v1/usuarios - Listar usuarios
+GET /api/v1/usuarios/{id} - Obtener usuario
+POST /api/v1/usuarios - Crear usuario
+PUT /api/v1/usuarios/{id} - Actualizar usuario
+DELETE /api/v1/usuarios/{id} - Eliminar usuario
+
+GET /api/v1/prestamos - Listar préstamos
+GET /api/v1/prestamos/{id} - Obtener préstamo
+POST /api/v1/prestamos - Crear préstamo
+PUT /api/v1/prestamos/{id} - Actualizar préstamo
+DELETE /api/v1/prestamos/{id} - Eliminar préstamo
+GET /api/v1/prestamos/activos - Préstamos activos
+
+GET /api/v1/reservas - Listar reservas
+GET /api/v1/reservas/{id} - Obtener reserva
+POST /api/v1/reservas - Crear reserva
+PUT /api/v1/reservas/{id} - Actualizar reserva
+DELETE /api/v1/reservas/{id} - Eliminar reserva
+PATCH /api/v1/reservas/{id}/convertir - Convertir a préstamo
+
+GET /api/v1/categorias - Listar categorías
+GET /api/v1/categorias/{id} - Obtener categoría
+POST /api/v1/categorias - Crear categoría
+PUT /api/v1/categorias/{id} - Actualizar categoría
+DELETE /api/v1/categorias/{id} - Eliminar categoría
+GET /api/v1/categorias/activas - Categorías activas
+
+GET /api/v1/resenas - Listar reseñas
+GET /api/v1/resenas/{id} - Obtener reseña
+POST /api/v1/resenas - Crear reseña
+PUT /api/v1/resenas/{id} - Actualizar reseña
+DELETE /api/v1/resenas/{id} - Eliminar reseña
+GET /api/v1/resenas/libro/{libroId} - Reseñas por libro
+GET /api/v1/resenas/libro/{libroId}/promedio - Promedio
+
+GET /api/v1/notificaciones - Listar notificaciones
+GET /api/v1/notificaciones/{id} - Obtener notificación
+POST /api/v1/notificaciones - Crear notificación
+PATCH /api/v1/notificaciones/{id}/enviar - Enviar
+PATCH /api/v1/notificaciones/{id}/leer - Marcar como leída
+
+GET /api/v1/inventario - Listar inventario
+GET /api/v1/inventario/{id} - Obtener inventario
+GET /api/v1/inventario/libro/{libroId} - Por libro
+GET /api/v1/inventario/stock-bajo - Stock bajo
+GET /api/v1/inventario/stock-agotado - Stock agotado
+POST /api/v1/inventario/movimientos - Registrar movimiento
+
+GET /api/v1/carrito/usuario/{usuarioId} - Carrito del usuario
+POST /api/v1/carrito/usuario/{usuarioId}/items - Agregar item
+PUT /api/v1/carrito/usuario/{usuarioId}/items/{libroId} - Actualizar
+DELETE /api/v1/carrito/usuario/{usuarioId}/items/{libroId} - Eliminar
+PATCH /api/v1/carrito/usuario/{usuarioId}/finalizar - Finalizar
