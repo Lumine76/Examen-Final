@@ -1,0 +1,11 @@
+libreria: http://localhost:8081/swagger-ui.html 
+autores: http://localhost:8082/swagger-ui.html 
+usuarios: http://localhost:8083/swagger-ui.html 
+prestamos: http://localhost:8084/swagger-ui.html 
+reservas: http://localhost:8085/swagger-ui.html 
+categorias: http://localhost:8086/swagger-ui.html 
+reseñas: http://localhost:8087/swagger-ui.html 
+notificaciones: http://localhost:8088/swagger-ui.html 
+api-gateway: http://localhost:8089/swagger-ui.html 
+ms-users: http://localhost:8090/swagger-ui.html 
+carrito: http://localhost:8092/swagger-ui.html 
